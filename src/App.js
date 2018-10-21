@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import {Buttons} from './Buttons'
+import {ToCalculate} from './ToCalculate'
+import {Outcome} from './Outcome'
+import {Evaluate} from './Evaluate'
+import {ClearAll} from './ClearAll'
 
 
-import './App.css';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        test
+        <div>
+          <ToCalculate />
+          <Outcome />
+        </div>
+        <div>
+          <Buttons/>
+        </div>
+        <div>
+          <Evaluate />
+          <ClearAll />
+        </div>
       </div>
     );
   }
