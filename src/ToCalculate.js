@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 export const ToCalculate = () => {
     return (
         <div>
-            {this.props.toCalculate}
+            {toCalculate}
         </div>
     )
 }

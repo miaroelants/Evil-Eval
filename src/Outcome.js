@@ -4,14 +4,14 @@ import {connect} from 'react-redux'
 
 export const Outcome = () => {
     return (
-        <span>
-            {this.props.outcome}
-        </span>
+        <div>
+            {outcome}
+        </div>
     )
 }
 
 const mapStateToProps = (state) => ({
     outcome: state.outcome,
-})
+}) 
 
 export default connect(mapStateToProps)(Outcome)
