@@ -3,7 +3,7 @@ import {createStore} from 'redux'
 //state
 const initialState = {
     toCalculate: '',
-    outcome: undefined,
+    outcome: 88,
 }
 
 //actions

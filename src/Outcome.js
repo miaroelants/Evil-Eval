@@ -2,7 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux'
  
 
-export const Outcome = () => {
+export const Outcome = (props) => {
+    const {outcome} = props;
     return (
         <div>
             {outcome}

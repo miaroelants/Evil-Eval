@@ -16,7 +16,7 @@ export class ClearAll extends React.Component {
         return (
             
                 <button onClick = {this.handleClear} >
-                    =
+                    clr
                 </button>
             
         )

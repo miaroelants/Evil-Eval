@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <ToCalculate />
-          <Outcome />
+          Calculate: <ToCalculate />
+          Outcome: <Outcome />
         </div>
         <div>
           <Buttons/>
