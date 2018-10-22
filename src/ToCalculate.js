@@ -1,9 +1,9 @@
 import React from 'react'
-import {connect} from 'react-redux'
- 
+import { connect } from 'react-redux'
 
-export const ToCalculate = (props) => {
-    const {toCalculate} = props;
+
+const ToCalculate = (props) => {
+    const { toCalculate } = props;
     return (
         <div>
             {toCalculate}
@@ -11,9 +11,11 @@ export const ToCalculate = (props) => {
     )
 }
 
-const mapStateToProps = (state) => ({
-    toCalculate: state.toCalculate,
-})
+const mapStateToProps = (state) => {
+    return {
+        toCalculate: state.toCalculate,
+    }
+}
 
 export default connect(mapStateToProps)(ToCalculate)
 

@@ -1,9 +1,9 @@
 import React from 'react'
-import {connect} from 'react-redux'
- 
+import { connect } from 'react-redux'
 
-export const Outcome = (props) => {
-    const {outcome} = props;
+
+const Outcome = (props) => {
+    const { outcome } = props;
     return (
         <div>
             {outcome}
@@ -13,6 +13,6 @@ export const Outcome = (props) => {
 
 const mapStateToProps = (state) => ({
     outcome: state.outcome,
-}) 
+})
 
 export default connect(mapStateToProps)(Outcome)

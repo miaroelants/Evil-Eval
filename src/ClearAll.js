@@ -1,29 +1,37 @@
 import React from 'react'
-import {clearAll} from './store'
-import {connect} from 'react-redux'
+import { clearAll } from './store'
+import { connect } from 'react-redux'
 
-export class ClearAll extends React.Component {
-    constructor(props){
+/*export class ClearAll extends React.Component {
+    constructor(props) {
         super(props);
         this.handleClear = this.handleClear.bind(this)
     }
 
-    handleClear(){
+    handleClear() {
         this.props.store.dispatch(clearAll())
-      }
+    }
 
-    render(){
+    render() {
         return (
+
             
-                <button onClick = {this.handleClear} >
-                    clr
-                </button>
-            
+
         )
     }
-}
+}*/
 
-const mapDispatchToProps = (dispatch) => clearAll 
+const ClearAll = ({ clearAll }) => (
+    <button onClick={clearAll} >
+        clr
+    </button>
+)
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        clearAll: (bbb) => dispatch(clearAll(bbb))
+    }
+}
 
 
 

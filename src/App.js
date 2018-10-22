@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {Buttons} from './Buttons'
-import {ToCalculate} from './ToCalculate'
-import {Outcome} from './Outcome'
-import {Evaluate} from './Evaluate'
-import {ClearAll} from './ClearAll'
+import { Buttons } from './Buttons'
+import ToCalculate from './ToCalculate'
+import Outcome from './Outcome'
+import Evaluate from './Evaluate'
+import ClearAll from './ClearAll'
 
 
 
@@ -17,7 +17,7 @@ class App extends Component {
           Outcome: <Outcome />
         </div>
         <div>
-          <Buttons/>
+          <Buttons />
         </div>
         <div>
           <Evaluate />

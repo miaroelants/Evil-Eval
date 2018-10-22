@@ -1,10 +1,10 @@
 import React from 'react'
-import {connect} from 'react-redux'
-import {addToCalculate} from './store'
+import Button from './button'
+
 
 
 export class Buttons extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.handleUpdate = this.handleUpdate.bind(this)
     }
@@ -13,35 +13,33 @@ export class Buttons extends React.Component {
         this.props.addToCalculate(input)
     }
 
-    render () {
-        // const handleUpdate = (input) => {
-        //    this.props.addToCalculate(input) 
-        // }
+    render() {
         return (
             <div>
                 <div>
-                {//<button onClick={this.handleUpdate(0)}>0</button> 
-                }
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
+                    <Button data="0" />
+                    <Button data="1" />
+                    <Button data="2" />
+                    <Button data="3" />
+                    <Button data="4" />
+                    <Button data="5" />
+                    <Button data="6" />
+                    <Button data="7" />
+                    <Button data="8" />
+                    <Button data="9" />
                 </div>
                 <div>
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
+                    <Button data="+" />
+                    <Button data="-" />
+                    <Button data="*" />
+                    <Button data="/" />
                 </div>
             </div>
         )
-        }
+    }
 }
+
+
 
 /*
 
