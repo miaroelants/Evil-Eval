@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 // component
 const ToCalculate = ({ toCalculate }) => {
     return (
-        <div>
+        <div id="toCalculate" >
             {toCalculate}
         </div>
     )

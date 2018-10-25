@@ -2,7 +2,7 @@ import { createStore } from 'redux'
 
 //state
 const initialState = {
-    toCalculate: '',
+    toCalculate: ' ',
 }
 
 //actions

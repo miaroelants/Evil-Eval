@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 // component
 const ClearAll = ({ clearAll }) => (
-    <button onClick={clearAll} >
+    <button onClick={clearAll} className="roundbutton">
         clr
     </button>
 )

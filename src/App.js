@@ -3,6 +3,7 @@ import { Buttons } from './Buttons'
 import ToCalculate from './ToCalculate'
 import Evaluate from './Evaluate'
 import ClearAll from './ClearAll'
+import './app.css';
 
 // container component
 class App extends Component {
@@ -11,7 +12,6 @@ class App extends Component {
       <div className="App">
         <div>
           <ToCalculate />
-
         </div>
         <div>
           <Buttons />
