@@ -3,7 +3,6 @@ import { createStore } from 'redux'
 //state
 const initialState = {
     toCalculate: '',
-    outcome: 88,
 }
 
 //actions
@@ -25,20 +24,17 @@ function reducer(state, action) {
         // eslint-disable-next-line
         const finalToCalculate = eval(state.toCalculate)
         return {
-            ...state,
-            outcome: finalToCalculate,
+            toCalculate: finalToCalculate,
         }
     }
     else if (action.type === 'ADD_TO_CALCULATE') {
         return {
-            ...state,
             toCalculate: state.toCalculate + action.payload,
         }
     }
     else if (action.type === 'CLEAR_ALL') {
         return {
             toCalculate: '',
-            outcome: undefined
         }
     }
     else { return state }

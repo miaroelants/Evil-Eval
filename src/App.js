@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Buttons } from './Buttons'
 import ToCalculate from './ToCalculate'
-import Outcome from './Outcome'
 import Evaluate from './Evaluate'
 import ClearAll from './ClearAll'
 
@@ -11,8 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          Calculate: <ToCalculate />
-          Outcome: <Outcome />
+          <ToCalculate />
+
         </div>
         <div>
           <Buttons />
