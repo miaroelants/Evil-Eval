@@ -1,4 +1,4 @@
-import {createStore} from 'redux'
+import { createStore } from 'redux'
 
 //state
 const initialState = {
@@ -12,7 +12,7 @@ export function doCalculate() {
 }
 
 export function addToCalculate(input) {
-    return { type: 'ADD_TO_CALCULATE', payload: input}
+    return { type: 'ADD_TO_CALCULATE', payload: input }
 }
 
 export function clearAll() {
@@ -20,7 +20,7 @@ export function clearAll() {
 }
 
 //reducer
-function reducer (state, action) {
+function reducer(state, action) {
     if (action.type === 'DO_CALCULATE') {
         const finalToCalculate = eval(state.toCalculate)
         return {
@@ -37,7 +37,7 @@ function reducer (state, action) {
     else if (action.type === 'CLEAR_ALL') {
         return {
             toCalculate: '',
-            outcome : undefined
+            outcome: undefined
         }
     }
     else { return state }
@@ -47,7 +47,7 @@ function reducer (state, action) {
 //store
 const store = createStore(reducer, initialState)
 
-//(elke keer store wordt aangepast, wordt deze gelogd => testcode)
+//test
 store.subscribe(function () {
     console.log("Updated store, new state:", store.getState())
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-
+//component 
 const Outcome = (props) => {
     const { outcome } = props;
     return (
@@ -11,8 +11,10 @@ const Outcome = (props) => {
     )
 }
 
+// StateToProps
 const mapStateToProps = (state) => ({
     outcome: state.outcome,
 })
 
+// connect
 export default connect(mapStateToProps)(Outcome)

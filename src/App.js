@@ -5,9 +5,7 @@ import Outcome from './Outcome'
 import Evaluate from './Evaluate'
 import ClearAll from './ClearAll'
 
-
-
-
+// container component
 class App extends Component {
   render() {
     return (

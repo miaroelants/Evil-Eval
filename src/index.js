@@ -5,9 +5,9 @@ import App from './App';
 import { Provider } from 'react-redux'
 import Store, { doCalculate, addToCalculate, clearAll } from './store'
 
-
 ReactDOM.render(<Provider store={Store}><App /></Provider>, document.getElementById('root'));
 
+//test
 Store.dispatch(addToCalculate('5'))
 Store.dispatch(addToCalculate('+'))
 Store.dispatch(addToCalculate('4'))
