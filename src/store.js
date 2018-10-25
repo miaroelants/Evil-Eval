@@ -22,6 +22,7 @@ export function clearAll() {
 //reducer
 function reducer(state, action) {
     if (action.type === 'DO_CALCULATE') {
+        // eslint-disable-next-line
         const finalToCalculate = eval(state.toCalculate)
         return {
             ...state,
