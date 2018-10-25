@@ -13,27 +13,13 @@ export class Buttons extends React.Component {
         this.props.addToCalculate(input)
     }
 
+
     render() {
+        const butTon = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "*", "/"]
+        const butTonList = butTon.map(bleh => <Button data={bleh} />)
         return (
             <div>
-                <div>
-                    <Button data="0" />
-                    <Button data="1" />
-                    <Button data="2" />
-                    <Button data="3" />
-                    <Button data="4" />
-                    <Button data="5" />
-                    <Button data="6" />
-                    <Button data="7" />
-                    <Button data="8" />
-                    <Button data="9" />
-                </div>
-                <div>
-                    <Button data="+" />
-                    <Button data="-" />
-                    <Button data="*" />
-                    <Button data="/" />
-                </div>
+                {butTonList}
             </div>
         )
     }
