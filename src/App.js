@@ -12,15 +12,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div id="bovenste">
+        
+        <div id="A">
           <ToCalculate />
         </div>
-        <div id="onderste">
+
+        <div id="B">
           <Buttons />
           <Evaluate />
           <ClearAll />
-          <MathButtons />
-          
+        </div>
+        <div id="C">
+          <MathButtons />  
         </div>
       </div>
     );

@@ -7,12 +7,40 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    
+    
+}
+
+#A {
+    grid-column-start: 1; 
+    grid-column-end: 14; 
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+#B {
+    grid-column-start: 1; 
+    grid-column-end: 10; 
+    grid-row-start: 5;
+    grid-row-end: 17;
+}
+
+
+#C {
+    grid-column-start: 10; 
+    grid-column-end: 14; 
+    grid-row-start: 5;
+    grid-row-end: 17;
 }
 
 #toCalculate {
     position: absolute;
     background-color: black;
-    height: 20px;
+    height: 40px;
     width: 220px;
     font-family: 'VT323', monospace;
     font-size: 30px;
