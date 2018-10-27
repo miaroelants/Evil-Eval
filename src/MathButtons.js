@@ -4,9 +4,9 @@ import Button from './button'
 // component
 export const MathButtons = () => {
     const inputsMath = ["+", "-", "*", "/"]
-    const inputsMathButtons = inputsMath.map(bleh => <Button data={bleh} />)
+    const inputsMathButtons = inputsMath.map(bleh => <Button data={bleh}  />)
     return (
-        <div>
+        <div id="mathbuttons">
             {inputsMathButtons}
         </div>
     )
