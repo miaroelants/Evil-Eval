@@ -3,9 +3,9 @@ import { addToCalculate } from './store'
 import { connect } from 'react-redux'
 
 // component
-const Button = ({ addToCalculate, data }) => {
+const Button = ({ addToCalculate, data, id }) => {
     return (
-        <button onClick={() => addToCalculate(data)} className="roundbutton">
+        <button onClick={() => addToCalculate(data)} className="roundbutton" id={id}>
             {data}
         </button>
     )
@@ -20,3 +20,5 @@ const mapDispatchToProps = (dispatch) => (
 
 // connect
 export default connect(null, mapDispatchToProps)(Button)
+
+
