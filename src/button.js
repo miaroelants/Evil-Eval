@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 // component
 const Button = ({ addToCalculate, data, id }) => {
     return (
-        <button onClick={() => addToCalculate(data)} className="roundbutton" id={id}>
+        <button onClick={() => addToCalculate(data)} className="roundbutton" >
             {data}
         </button>
     )

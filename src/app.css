@@ -14,6 +14,7 @@
 
 #A {
     grid-area: 1 / 1 / 5 / 14 ;
+    
 }
 
 #B {
@@ -38,8 +39,11 @@
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 8px;
-    padding-right: 5px
-}
+    padding-right: 5px;
+    float:right;
+    overflow: hidden;
+    
+}    
 
 .roundbutton {
     display: inline-block;
@@ -79,4 +83,6 @@
     right: 26px;
   }
 
-  
+#numbers {
+    float:right;
+}

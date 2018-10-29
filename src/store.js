@@ -18,14 +18,24 @@ export function clearAll() {
     return { type: 'CLEAR_ALL', }
 }
 
+
 //reducer
 function reducer(state, action) {
     if (action.type === 'DO_CALCULATE') {
-        // eslint-disable-next-line
-        const finalToCalculate = eval(state.toCalculate)
-        return {
-            toCalculate: finalToCalculate,
+        try {
+            // eslint-disable-next-line
+            const finalToCalculate = eval(state.toCalculate)
+            return {
+                toCalculate: finalToCalculate,
+            }
         }
+        catch (e) {
+            return {
+                toCalculate: "ERROR",
+            }
+        }
+
+
     }
     else if (action.type === 'ADD_TO_CALCULATE') {
         return {

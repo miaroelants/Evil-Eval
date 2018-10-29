@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
+
         <div id="A">
           <ToCalculate />
         </div>
@@ -23,7 +23,7 @@ class App extends Component {
           <ClearAll />
         </div>
         <div id="C">
-          <MathButtons />  
+          <MathButtons />
         </div>
       </div>
     );
